@@ -29,8 +29,9 @@ function checkvictory(){
 }
 
 var turn = 0;  //turn of first player
-var cntchance =0;
+let cntchance =0;
 function turns(index){
+    
     console.log(index);
     if(turn==0){
         if(boxes[index].innerHTML==""){
@@ -42,10 +43,12 @@ function turns(index){
             if(checkvictory() && cntchance>=5){
                 console.log("Player 1 Won!");
                 output.innerHTML = "Player 1 Won!";
+               
             }
             else if(cntchance>=9){
                 console.log("Draw!!");
                 output.innerHTML = "Draw!!";
+                
             }
         }
     }
@@ -58,10 +61,12 @@ function turns(index){
             if(checkvictory() && cntchance>=5){
                 console.log("Player 2 Won! ");
                 output.innerHTML = "Player 2 Won!";
+              
             }
             else if(cntchance>=9){
                 console.log("Draw!!");
                 output.innerHTML = "Draw!!";
+                
             }
         }
     }
