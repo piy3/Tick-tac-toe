@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tick-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/1200px-Tic_tac_toe.svg.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div style="font-weight: bold;" >Tick-Tac-Toe</div>
+            <div class="play-box">
+                <div class="b" id="b1" onclick="turns(0)"></div>
+                <div class="b" id="b2" onclick="turns(1)"></div>
+                <div class="b" id="b3" onclick="turns(2)"></div>
+                <div class="b" id="b4" onclick="turns(3)"></div>
+                <div class="b" id="b5" onclick="turns(4)"></div>
+                <div class="b" id="b6" onclick="turns(5)"></div>
+                <div class="b" id="b7" onclick="turns(6)"></div>
+                <div class="b" id="b8" onclick="turns(7)"></div>
+                <div class="b" id="b9" onclick="turns(8)"></div>
+            </div>
+            <div class="output">
+                --Winner--
+            </div>
+            <span class="newgame" onclick="newgame()">New Game</span>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
